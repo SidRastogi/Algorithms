@@ -14,4 +14,5 @@
 // import "./Scripts/bubbleShort";
 // import "./Scripts/SelctionShort";
 // import "./Scripts/insertionShort";
-import "./Scripts/mergeShort";
+// import "./Scripts/mergeShort";
+import "./Scripts/mergeShort2";
