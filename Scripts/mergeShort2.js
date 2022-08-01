@@ -1,4 +1,4 @@
-function mergeShort(arr1, arr2) {
+function merge(arr1, arr2) {
   const result = [];
   let i = 0;
   let j = 0;
@@ -22,5 +22,19 @@ function mergeShort(arr1, arr2) {
   return result;
 }
 
-mergeShort([1, 5, 10], [2, 6, 11, 15]);
-console.log(mergeShort([1, 5, 10], [2, 6, 11, 15]));
+function mergeShort(arr) {
+  if (arr.length === 1) return arr;
+  let midPoint = arr.length / 2;
+  let left = mergeShort(arr.slice(0, midPoint));
+  let right = mergeShort(arr.slice(midPoint));
+  return merge(left, right);
+}
+
+function remdonArrGen(len) {
+  return Array.apply([], {
+    length: len,
+  }).map(() => Math.floor(Math.random() * 33));
+}
+let remdomNumbers = remdonArrGen(15);
+
+console.log(remdomNumbers, mergeShort(remdomNumbers));
