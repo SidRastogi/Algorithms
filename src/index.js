@@ -15,5 +15,5 @@
 // import '../scripts/SelctionShort';
 // import '../scripts/insertionShort';
 // import '../scripts/mergeShort';
-import '../scripts/mergeShort2';
-// console.log('hello');
+// import '../scripts/mergeShort2';
+import '../scripts/QuickShort';
