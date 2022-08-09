@@ -16,4 +16,5 @@
 // import '../scripts/insertionShort';
 // import '../scripts/mergeShort';
 // import '../scripts/mergeShort2';
-import '../scripts/QuickShort';
+// import '../scripts/QuickShort';
+import '../Scripts/reduxShort';
