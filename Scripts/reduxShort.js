@@ -15,4 +15,17 @@ function maxDigit(numbers) {
   return maxCount;
 }
 
-console.log(maxDigit([1, 2, 22, 55, 555, 55, 888888]));
+function reduxShort(nums) {
+  let maxDegitCount = maxDigit(nums);
+  for (let k = 0; k < maxDegitCount; k++) {
+    let digitBuket = Array.from({ length: 10 }, () => []);
+    for (let i = 0; i < nums.length; i++) {
+      let Digit = getDigit(nums[i], k);
+      digitBuket[Digit].push(nums[i]);
+    }
+    nums = [].concat(...digitBuket);
+  }
+  return nums;
+}
+
+console.log(reduxShort([2, 55, 123, 7895, 54168, 3, 54, 89, 51]));
