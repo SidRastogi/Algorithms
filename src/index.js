@@ -17,4 +17,6 @@
 // import '../scripts/mergeShort';
 // import '../scripts/mergeShort2';
 // import '../scripts/QuickShort';
-import '../Scripts/reduxShort';
+// import '../Scripts/reduxShort';
+
+import '../dataStructures/SingleLinkList';
